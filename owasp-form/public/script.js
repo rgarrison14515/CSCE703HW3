@@ -36,7 +36,7 @@ form.addEventListener("submit", async function (event) {
 
     const data = await response.json();
 
-    message.textContent = data.message;
+    message.innerHTML = data.message;
     message.style.color = data.success ? "green" : "red";
   } catch (error) {
     message.textContent = "Server error.";

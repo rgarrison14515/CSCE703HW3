@@ -33,7 +33,7 @@ app.post("/login", (req, res) => {
 
   return res.json({
     success: true,
-    message: "Login form submitted successfully."
+    message: `Welcome ${email}`
   });
 });
 
